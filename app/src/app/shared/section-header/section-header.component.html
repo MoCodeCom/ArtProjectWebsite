@@ -1,0 +1,79 @@
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button (click)="ChangLanguage()" class="btnLanguage">{{langBtn}}</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+    id="slide-btn"
+    (click)="SlideList();"
+
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+        <li class="nav-item ms-5 me-5">
+          <a class="nav-link active"
+
+             aria-current="page"
+             id="home_a"
+             routerLink='/'
+             routerLinkActive="active">{{nav[0]}}</a>
+        </li>
+        <li class="nav-item ms-5 me-5">
+          <a class="nav-link"
+
+            id="work_a"
+            routerLink='/works'
+            routerLinkActive="active">{{nav[1]}}</a>
+        </li>
+        <li class="nav-item ms-5 me-5">
+          <a class="nav-link"
+
+            id="blog_a"
+            routerLink='/blog'
+            routerLinkActive="active">{{nav[2]}}</a>
+        </li>
+        <li class="nav-item ms-5 me-5">
+          <a class="nav-link"
+
+             id="about_a"
+             routerLink='/about'
+             routerLinkActive="active">{{nav[3]}}</a>
+        </li>
+      </ul>
+      <!--
+      <span class="navbar-text">
+
+      </span>-->
+    </div>
+  </div>
+</nav>
+
+
+<div class="slideDivDefault"
+style="visibility: hidden;"
+#slideRef
+>
+  <nav class="slideNave"  >
+    <ul class="slideList">
+      <li><a routerLink='' routerLinkActive="active" (click)="HideList()">{{nav[0]}}</a></li>
+      <li><a routerLink='/works' routerLinkActive="active" (click)="HideList()">{{nav[1]}}</a></li>
+      <li><a routerLink='/blog' routerLinkActive="active" (click)="HideList()">{{nav[2]}}</a></li>
+      <li><a routerLink='/about' routerLinkActive="active" (click)="HideList()">{{nav[3]}}</a></li>
+    </ul>
+  </nav>
+</div>
+
+
