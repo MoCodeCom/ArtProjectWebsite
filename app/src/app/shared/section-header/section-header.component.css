@@ -45,16 +45,18 @@
   text-align: center;
   padding: 30px;
   backdrop-filter: blur(3px);
+  z-index: 100;
 }
 
 .slideDiv{
-  background-color: aquamarine;
+  background-color: white;
   width: 100%;
   position: absolute;
   display: inline-block;
   justify-content: center;
   text-align: center;
   padding: 30px;
+
   /*display:unset;*/
 }
 .slideList {

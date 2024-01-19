@@ -2,35 +2,33 @@
   <div class="t1">
     <img
     alt="home-image"
-    src="../../assets/images/work1_image_home.jpg"
-
-    />
+    src="/assets/images/work1_image_home.jpg"/>
   </div>
 
   <div class="t2">
-    <h4 *ngIf="language == 'English'">جاسم الفضل</h4>
+    <h4 *ngIf="language === 'English'">جاسم الفضل</h4>
 
-    <h4 *ngIf="language == 'Arabic'">Jasim Alfadhel</h4>
+    <h4 *ngIf="language === 'Arabic'">Jasim Alfadhel</h4>
 
 
   </div>
   <div class="t3">
-    <p *ngIf="language == 'English'">
+    <p *ngIf="language === 'English'">
       أقام جاسم الفضل العديد من المعارض التشكيلية الخاصة، كما شارك في العديد من المعارض التشكيلية داخل العراق وخارجه. كذلك عمل في رسوم مجلة «مجلتي» العراقية الخاصة بالأطفال. أيضاً عمل الكثير من الجداريات في البصرة. وتميز برسم الشخصيات «البورتريه» والمناظر الطبيعية والبيئة العراقية.
     </p>
 
-    <p *ngIf="language == 'Arabic'" style="direction: ltr;">
+    <p *ngIf="language === 'Arabic'" style="direction: ltr;">
       Jasim Al-Fadhil has organized numerous private art exhibitions and participated in various art exhibitions inside and outside Iraq. He also worked on illustrations for the Iraqi children's magazine "Majlati." Additionally, he created many murals in Basra and was known for his drawings of portraits, landscapes, and the Iraqi environment.
     </p>
   </div>
   <div class="t4">
     <img
     alt="jasim-img-home"
-    src="../../assets/images/jasim_image_home.jpg"
+    src="assets/images/jasim_image_home.jpg"
     />
   </div>
   <div class="t5">
-    <button (click)="workBtnHome()" *ngIf="language == 'English'">الاعمال</button>
-    <button (click)="workBtnHome()" *ngIf="language == 'Arabic'">Works</button>
+    <button (click)="workBtnHome()" *ngIf="language === 'English'">الاعمال</button>
+    <button (click)="workBtnHome()" *ngIf="language === 'Arabic'">Works</button>
   </div>
 </div>

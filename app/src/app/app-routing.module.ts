@@ -4,11 +4,20 @@ import { HomeComponent } from './home/home.component';
 import { WorksComponent } from './works/works.component';
 import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
-import { CommonModule } from '@angular/common';
+import { OilColorComponent } from './works/oil-color/oil-color.component';
+import { WaterColorComponent } from './works/water-color/water-color.component';
+import { OutlineComponent } from './works/outline/outline.component';
+import { OtherWorksComponent } from './works/other-works/other-works.component';
+
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'works', component:WorksComponent},
+  {path:'works/oilworks',component:OilColorComponent},
+  {path:'works/waterworks',component:WaterColorComponent},
+  {path:'works/outlineworks', component:OutlineComponent},
+  {path:'works/otherworks',component:OtherWorksComponent},
+
   {path:'blog', component:BlogComponent},
   {path:'about', component:AboutComponent},
   {path:'**', redirectTo:'', pathMatch:'full'}
